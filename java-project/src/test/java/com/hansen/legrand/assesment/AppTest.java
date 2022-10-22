@@ -5,6 +5,7 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -96,9 +97,13 @@ public class AppTest {
         driver.get("https://www.demoblaze.com/");
         page.firstItem();
         page.addCartA();
+        Thread.sleep(3000);
+        driver.switchTo().alert().accept();
         page.addCartA();
+        Thread.sleep(3000);
+        driver.switchTo().alert().accept();
         page.clickCart();
-//        assertEquals("720", page.cartAmount());
+        assertEquals("720", page.cartAmount());
 
 
     }
@@ -122,14 +127,17 @@ public class AppTest {
         driver.get("https://www.demoblaze.com/");
         page.firstItem();
         page.addCartA();
+        Thread.sleep(5000);
+        driver.switchTo().alert().accept();
         page.addCartA();
-        Thread.sleep(3000);
+        Thread.sleep(5000);
+        driver.switchTo().alert().accept();
         page.clickCart();
         Thread.sleep(3000);
         page.deleteCartA();
         Thread.sleep(3000);
-        page.deleteCartB();
-        assertFalse(page.delBtnIsVisible());
+        page.deleteCartA();
+        assertTrue(page.delBtnIsVisible());
 
 
 
@@ -140,8 +148,11 @@ public class AppTest {
         driver.get("https://www.demoblaze.com/");
         page.firstItem();
         page.addCartA();
+        Thread.sleep(5000);
+        driver.switchTo().alert().accept();
         page.addCartA();
         Thread.sleep(5000);
+        driver.switchTo().alert().accept();
         page.clickCart();
         assertEquals("720", page.cartAmount());
 
@@ -154,11 +165,15 @@ public class AppTest {
         driver.get("https://www.demoblaze.com/");
         page.firstItem();
         page.addCartA();
+        Thread.sleep(5000);
+        driver.switchTo().alert().accept();
         page.addCartA();
         Thread.sleep(5000);
+        driver.switchTo().alert().accept();
         page.clickCart();
         page.deleteCartA();
-        assertEquals(360, page.cartAmount());
+        Thread.sleep(3000);
+        assertEquals("360", page.cartAmount());
 
 
     }

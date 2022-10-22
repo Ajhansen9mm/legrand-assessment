@@ -34,13 +34,6 @@ public class ClassObject {
     private By cartNumber = By.id("totalp");
 
 
-
-
-
-
-
-
-
     public ClassObject(WebDriver driver) {
         this.driver = driver;
     }
@@ -54,69 +47,87 @@ public class ClassObject {
         this.findElement(signUp).click();
     }
 
-//    public void clickSignUp(){
+    //    public void clickSignUp(){
 //        this.driver.findElement(signUp).click();
 //    }
     public void typePassword() {
         this.findElement(passWord).sendKeys("Password");
     }
+
     public void typeUsername() {
         this.findElement(userName).sendKeys("Ron_Burgundy");
     }
+
     public void enterAccount() {
         this.findElement(enterSignUp).click();
     }
+
     public void logInAcc() {
         this.findElement(logIn).click();
     }
+
     public void enterUsername() {
         this.findElement(userLogin).sendKeys("Ron_Burgundy");
     }
+
     public void enterPassword() {
         this.findElement(passwordLogin).sendKeys("Password");
     }
+
     public void signIn() {
         this.findElement(enterLogIn).click();
     }
+
     public void signOut() {
         this.findElement(signOut).click();
     }
+
     public void signUpCancel() {
         this.findElement(signUpCancel).click();
     }
+
     public void addCartA() {
         this.findElement(addCart).click();
     }
+
     public void clickCart() {
         this.findElement(cart).click();
     }
+
     public void deleteCartA() {
         this.findElement(deleteCart).click();
     }
+
     public void deleteCartB() {
         this.findElement(deleteCartTwo).click();
     }
+
     public void firstItem() {
         this.findElement(itemOne).click();
     }
 //    public String cartAmount() {
 //        return this.driver.findElement(xxxx).getText();
 
-//    }
+    //    }
     public boolean logoutButtonIsDisplayed() {
         return this.findElement(signOut).isDisplayed();
     }
 
-    protected WebElement findElement(By by){
+    protected WebElement findElement(By by) {
         WebDriverWait wait = new WebDriverWait(this.driver, Duration.ofMillis(7000));
         wait.until(ExpectedConditions.visibilityOfElementLocated(by));
         return this.driver.findElement(by);
     }
+//    public String cartAmount() {
+//        return this.findElement(cartNumber).getText();
+
+    //    }
     public String cartAmount() {
         return this.findElement(cartNumber).getText();
 
     }
-    public boolean delBtnIsVisible() {
-        return this.findElement(deleteBtnVisible).isDisplayed();
+
+        public boolean delBtnIsVisible () {
+            return this.findElement(deleteBtnVisible).isDisplayed();
+        }
     }
-}
