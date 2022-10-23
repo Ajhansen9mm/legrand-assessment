@@ -16,8 +16,6 @@ public class ClassObject {
     private By signUp = By.id("signin2");
     private By userName = By.xpath("//*[@id=\"sign-username\"]");
     private By passWord = By.xpath("//*[@id=\"sign-password\"]");
-    private By searchResult = By.xpath("//*[@id=\"tads\"]/div/div/div/div/div[1]/a/div[1]");
-    private By toBuy = By.xpath("//*[text()='Where To Buy']");
     private By enterSignUp = By.xpath("//*[@id=\"signInModal\"]/div/div/div[3]/button[2]");
     private By logIn = By.xpath("//*[@id=\"login2\"]");
     private By userLogin = By.xpath("//*[@id=\"loginusername\"]");
@@ -38,18 +36,10 @@ public class ClassObject {
         this.driver = driver;
     }
 
-//    public void search(String searchTerm) {
-//        this.driver.findElement(searchbar).sendKeys(searchTerm);
-//
-//    }
-
     public void signUp() {
         this.findElement(signUp).click();
     }
 
-    //    public void clickSignUp(){
-//        this.driver.findElement(signUp).click();
-//    }
     public void typePassword() {
         this.findElement(passWord).sendKeys("Password");
     }
@@ -105,10 +95,7 @@ public class ClassObject {
     public void firstItem() {
         this.findElement(itemOne).click();
     }
-//    public String cartAmount() {
-//        return this.driver.findElement(xxxx).getText();
 
-    //    }
     public boolean logoutButtonIsDisplayed() {
         return this.findElement(signOut).isDisplayed();
     }
@@ -118,10 +105,7 @@ public class ClassObject {
         wait.until(ExpectedConditions.visibilityOfElementLocated(by));
         return this.driver.findElement(by);
     }
-//    public String cartAmount() {
-//        return this.findElement(cartNumber).getText();
 
-    //    }
     public String cartAmount() {
         return this.findElement(cartNumber).getText();
 
