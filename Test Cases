@@ -1,0 +1,153 @@
+Test Case: Account Creation for DemoBlaze
+
+Description: Testing users ability to create an account on e-commerce site demoblaze.com
+
+Test Preconditions:
+
+1.   Navigate to DemoBlaze.com
+
+Test Steps:
+
+1.  Click on “Sign Up” button
+2.  Click on Username input space
+3.  Input “Ron_Burgundy”
+4.  Click on Password input space
+5.  Input “Password”
+6.  Click on “Sign Up” button
+
+Expected Results: Users will have an account that they can use to log in to DemoBlaze.com
+
+Actual Results: Test showed expected results>>>>>>Test Passed.
+
+
+
+Test Case: Login and Logout on DemoBlaze.com
+
+Description: Testing users ability to log in and then logout of DemoBlaze.com
+
+Test Preconditions:
+
+1.   Navigate to DemoBlaze.com
+
+Test Steps:
+
+1.   Click on “Log In” button
+2.   Click on Username input space
+3.   Input “Ron_Burgundy”
+4.   Click on Password input space
+5.   Input “Password”
+6.   Click “Log In” button
+7.   Click “Log Out” button on main page.
+
+Expected Results: Users will be able to Log in using their account details and then be able to logout from their account.
+
+Actual Results: Test showed expected results>>>>>>>Test Passed.
+
+
+
+Test Case: Adding items to cart on DemoBlaze.com
+
+Description: Testing users ability to add items to their cart.
+
+Test Preconditions:
+
+1   Navigate to www.DemoBlaze
+
+Test Steps:
+
+1.  From main page click on the first item.
+2.  Click on add to cart.
+3.  Click on accept when the alert pops up
+4.  Click on add to cart.
+5.  Click on accept when the alert pops up.
+6.  Click on “Cart” Button to confirm both items are visible.
+
+Expected Results: There will be two items in the users cart.
+
+Actual Result: Test showed expected results>>>>>>>Test Passed
+
+
+
+Test Case:  Cancel account creation.
+
+Description: Create account Enter all the details in the page (First Name/ Last Name etc). Click on cancel.
+
+Test Preconditions:
+1.  Navigate to www.DemoBlaze.com
+
+Test Steps:
+
+1.  Click on “Sign Up” button
+2.  Click on Username input space
+3.  Input “Ron_Burgundy”
+4.  Click on Password input space
+5.  Input “Password”
+6.  Click “Cancel” button
+
+Expected Results: User will not have an account created and will be returned to home page.
+
+Actual Results:  Test showed expected results>>>>>>Test Passed
+
+
+
+Test Case: Deleting items from cart
+
+Description:  Users will be able to delete items that have been added to cart.
+
+Test Preconditions:
+1.  Navigate to www.DemoBlaze.com and add two items to users cart.
+
+Test Steps:
+
+1.  Click on delete
+2.  Click on delete
+3.  Confirm both items have been deleted
+
+Expected results:  Users cart will be empty.
+
+Actual Results:  Test showed expected results>>>>>>>Test passed
+
+
+
+Test Case:  Checking number of items in cart.
+
+Description:  Users will have the to see the number of items in their cart.
+
+Test Preconditions:
+1.Navigate to www.DemoBlaze.com
+
+Test Steps:
+
+1.  Click on first item on main page
+2.  Click on “Add to Cart” button
+3.  Click on “Accept” when alert pops up
+4.  Click on “Add to Cart” button
+5.  Click on “Accept” when alert pops up
+6.  Check “Cart” button for the number of items in cart (2)
+
+Expected Results: The cart will show the number 2
+
+Actual Results: The cart shows no numbers>>>>>>Test Failed
+
+
+
+Test Case:  Adding and deleting items from cart.
+
+Description: Testing users ability to add and delete items from cart
+
+Test Preconditions:
+1.Navigate to www.DemoBlaze.com
+
+Test Steps:
+
+1.   From main page click on the first item.
+2.   Click on add to cart
+3.   Click on accept when the alert pops up
+4.   Click on add to cart
+5.   Click on accept when the alert pops up.
+6.   Click on delete on one of the items.
+7.   Confirm that the desired item to be deleted has been deleted.
+
+Expected Results: The cart will have one item
+
+Actual Results: Test showed expected results>>>>>>Test Passed
